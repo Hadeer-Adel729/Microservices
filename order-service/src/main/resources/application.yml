@@ -1,3 +1,4 @@
+# order-service/src/main/resources/application.yaml
 server:
   port: 8082
 spring:
@@ -15,3 +16,9 @@ spring:
   h2:
     console:
       enabled: true
+
+# Add service URLs
+service:
+  url:
+    user-service: http://localhost:8081/api/users
+    product-service: http://localhost:8083/api/products
